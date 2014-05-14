@@ -1,0 +1,30 @@
+legend {
+    margin-bottom: 2px;
+}
+
+
+.map-chart{
+
+}
+.state.NZ-AUK { fill: #29dd81; }
+.state.NZ-BOP { fill: #dd7a0c; }
+.state.NZ-CAN { fill: #dd23ce; }
+.state.NZ-GIS { fill: #693cdd; }
+.state.NZ-HKB { fill: #dd364f; }
+.state.NZ-MWT { fill: #96dd1d; }
+.state.NZ-MBH { fill: #31dd1a; }
+.state.NZ-NSN { fill: #20aedd; }
+.state.NZ-NTL { fill: #ddc4b5; }
+.state.NZ-OTA { fill: #dddd6c; }
+.state.NZ-STL { fill: #2914dd; }
+.state.NZ-TAS { fill: #ddc4b5; }
+.state.NZ-TKI { fill: #dd0bd9; }
+.state.NZ-WKO { fill: #1d89dd; }
+.state.NZ-WGN { fill: #dd30cf; }
+.state.NZ-WTC { fill: #91dd1f; }
+
+text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    pointer-events: none;
+}

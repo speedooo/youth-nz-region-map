@@ -1,0 +1,67 @@
+<head>
+	<title>Youth Court data by year</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javascript" type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/crossfilter.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/d3.v3.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/dc.js"></script>
+	<script language="javascript" type="text/javascript" src="js/youth.js"></script>
+    <script language="javascript" type="text/javascript" src="js/topojson.v1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link type="text/css" rel="stylesheet" href="css/youth.css"/>
+    <link type="text/css" rel="stylesheet" href="css/dc.css"/>
+</head>
+
+<body>
+	<div class="container">
+	<h1>New Zealand Youth Court Data</h1>
+		<div class="row">
+			<span class="col-lg-8 col-md-8 col-sm-8 pull-left">
+
+				<legend>Offence</legend>
+				<div id="offence-chart" class="dc-chart" style="width:100%;"></div>
+
+
+				<legend>Year (in 1000's)</legend>
+				<div id="year-chart" class="dc-chart" style="width:100%;"></div>
+			</span>
+
+			<span class="col-lg-4 col-md-4 col-sm-4">
+                <legend>Regions</legend>
+                <div id="region-chart" class="dc-chart"></div>
+
+                <a class="reset" href="javascript:region_chart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                <span class="reset" style="display: none;"> | Current filter: <span class="filter"></span></span>
+
+                <div class="clearfix"></div>
+
+				<legend>Ethnicity</legend>
+				<div id="ethnicity-chart" class="dc-chart"></div>
+
+				<legend>Gender and Age</legend>
+                <div class="row">
+                    <span class="col-lg-6 col-md-6 col-sm-6 pull-left">
+				        <div id="gender-chart" class="dc-chart"></div>
+                    </span>
+                    <span class="col-lg-6 col-md-6 col-sm-6 pull-right">
+                        <div id="age-chart" class="dc-chart"></div>
+                    </span>
+                </div>
+
+
+				<legend>Outcome</legend>
+				<div id="outcome-chart" class="dc-chart"></div>
+
+			</span>
+		</div>
+		<div id="data-count">
+			<span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a href="javascript:dc.filterAll(); dc.redrawAll();">Reset All</a>
+		</div>
+
+
+	</div>
+
+
+</body>
+
